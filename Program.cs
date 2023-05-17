@@ -12,7 +12,7 @@
 
 
         //pass by reference type 
-        //the new keyword is what makes a reference type
+        //the new keyword is what makes a reference type and its a class
         int[] grades =  new int[1];
         grades[0] = 75;
 
@@ -27,5 +27,10 @@
         studentsGrade +=3;
         //if we put the console display in main it will not show what we want it will reset to the default value
         Console.WriteLine("Student's grade after extra credit: {0}" ,studentsGrade);//this ensures that our initial value is changed
+    }
+
+    public static void GiveExtraCreditArray(int[]grades)//in paranthesis is what the method needs 
+    {
+        grades[0] +=3;
     }
 }
