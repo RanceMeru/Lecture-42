@@ -2,7 +2,7 @@
 {//class is a reference type
     static void Main(string[] args)
     
-    {//pass by value 
+    {//pass by value (structs)
    
     int student1Grade = 75;//we initialize the variable
     Console.WriteLine("Student's grade before extra credit: {0}", student1Grade); //display the before credit grade
@@ -11,11 +11,13 @@
 
 
 
-        //pass by reference type 
+        //pass by reference type (classes)
         //the new keyword is what makes a reference type and its a class
         int[] grades =  new int[1];
         grades[0] = 75;
-
+        Console.WriteLine("Student array grade: {0}", grades[0]);
+        GiveExtraCreditArray(grades);
+        Console.WriteLine("Student array grade after : {0}", grades[0]);
     Console.ReadLine();
 
 
