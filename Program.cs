@@ -10,7 +10,6 @@
     ExtraCredit(student1Grade);//Then we call the other method and put the initalized variable in the paranthesis
 
 
-
         //pass by reference type (classes)
         //the new keyword is what makes a reference type and its a class
         int[] grades =  new int[1];
